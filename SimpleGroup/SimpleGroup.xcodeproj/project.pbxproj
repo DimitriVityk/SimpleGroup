@@ -21,6 +21,7 @@
 		80444C24266C3C4200118568 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80444C23266C3C4200118568 /* ProfileViewController.swift */; };
 		80444C27266C438E00118568 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80444C26266C438E00118568 /* Extensions.swift */; };
 		80444C29266C7DE200118568 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80444C28266C7DE200118568 /* GoogleService-Info.plist */; };
+		80444C2B266C89D900118568 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80444C2A266C89D900118568 /* DatabaseManager.swift */; };
 		EB201923B9E4812FE03D3F85 /* Pods_SimpleGroup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD31F1DEC644EAD8BE84EF /* Pods_SimpleGroup.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		80444C23266C3C4200118568 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		80444C26266C438E00118568 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		80444C28266C7DE200118568 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80444C2A266C89D900118568 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		D1AA0523176BFC98A60C47C9 /* Pods-SimpleGroup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleGroup.release.xcconfig"; path = "Target Support Files/Pods-SimpleGroup/Pods-SimpleGroup.release.xcconfig"; sourceTree = "<group>"; };
 		DADD31F1DEC644EAD8BE84EF /* Pods_SimpleGroup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleGroup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				80444C01266C375300118568 /* SceneDelegate.swift */,
 				80444BFF266C375300118568 /* AppDelegate.swift */,
 				80444C26266C438E00118568 /* Extensions.swift */,
+				80444C2A266C89D900118568 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80444C1A266C3BBD00118568 /* LoginViewController.swift in Sources */,
+				80444C2B266C89D900118568 /* DatabaseManager.swift in Sources */,
 				80444C1C266C3BD500118568 /* RegisterViewController.swift in Sources */,
 				80444C22266C3C3100118568 /* NewConversationViewController.swift in Sources */,
 				80444C04266C375300118568 /* ConversationsViewController.swift in Sources */,
