@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -35,7 +36,7 @@ class LoginViewController: UIViewController {
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0)) //set up padding of left side of field
         field.leftViewMode = .always //
-        field.backgroundColor = .white //
+        //field.backgroundColor = .white //
         
         return field
     }()
@@ -54,7 +55,7 @@ class LoginViewController: UIViewController {
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0)) //set up padding of left side of field
         field.leftViewMode = .always //
-        field.backgroundColor = .white //
+        //field.backgroundColor = .white //
         
         return field
     }()
@@ -74,7 +75,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Log In"
-        view.backgroundColor = .white
+        //view.backgroundColor = .white
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register",
                                                             style: .done,
@@ -126,7 +127,15 @@ class LoginViewController: UIViewController {
             return
         }
         //firebase login
-        
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Failed to log in user with email: \(email)")
+                return
+            }
+            let user = result.user
+            print("Logged in user \(user)")
+            
+        })
     }
     
     func alertUserLoginError() {
