@@ -36,7 +36,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "Email Address..."
-        //field.textColor = .black
+        field.textColor = .lightGray
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0)) //set up padding of left side of field
         field.leftViewMode = .always //
@@ -55,7 +55,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "First Name"
-        //field.textColor = .black
+        field.textColor = .lightGray
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0)) //set up padding of left side of field
         field.leftViewMode = .always //
@@ -74,7 +74,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "Last Name"
-        //field.textColor = .black
+        field.textColor = .lightGray
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0)) //set up padding of left side of field
         field.leftViewMode = .always //
@@ -94,7 +94,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         field.layer.borderColor = UIColor.lightGray.cgColor
         field.placeholder = "Password..."
         field.isSecureTextEntry = true
-        //field.textColor = .black
+        field.textColor = .lightGray
         
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0)) //set up padding of left side of field
         field.leftViewMode = .always //
